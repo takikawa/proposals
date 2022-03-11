@@ -5,13 +5,19 @@
 
 ## Active proposals
 
-Proposals follow [this process document](https://github.com/WebAssembly/meetings/blob/master/process/phases.md).
+Proposals follow [this process document](https://github.com/WebAssembly/meetings/blob/main/process/phases.md).
+
+### Phase 5 - The Feature is Standardized (WG)
+
+_These proposals have not yet been merged to the spec. Merged proposals are listed in [Finished Proposals](finished-proposals.md)._
+
+| Proposal                                                                       | Champion         |
+| ------------------------------------------------------------------------------ | ---------------- |
 
 ### Phase 4 - Standardize the Feature (WG)
 
 | Proposal                                                                       | Champion         |
 | ------------------------------------------------------------------------------ | ---------------- |
-| [Fixed-width SIMD][fixed-width_simd]                                           | Deepti Gandluri and Arun Purushan |
 
 ### Phase 3 - Implementation Phase (CG + WG)
 
@@ -21,6 +27,9 @@ Proposals follow [this process document](https://github.com/WebAssembly/meetings
 | [Multiple memories][multi-memory]                                                                    | Andreas Rossberg                       |
 | [Custom Annotation Syntax in the Text Format][custom_annotation_syntax_in_the_text_format]           | Andreas Rossberg                       |
 | [Memory64][memory64]                                                                                 | Wouter van Oortmerssen                 |
+| [Exception handling][exception_handling]                                                             | Heejin Ahn                             |
+| [Web Content Security Policy][web_content_security_policy]                                           | Francis McCabe                         |
+| [Branch Hinting][branch-hinting]                                                                     | Yuri Iozzelli                          |
 
 ### Phase 2 - Proposed Spec Text Available (CG + WG)
 
@@ -28,49 +37,49 @@ Proposals follow [this process document](https://github.com/WebAssembly/meetings
 | ---------------------------------------------------------------------------------------------------- | -------------------------------------- |
 | [Threads][threads]                                                                                   | Conrad Watt                            |
 | [ECMAScript module integration][ecmascript_module_integration]                                       | Lin Clark & Daniel Ehrenberg           |
-| [Exception handling][exception_handling]                                                             | Heejin Ahn                             |
 | [Type Reflection for WebAssembly JavaScript API][type_reflection_for_webassembly_javascript_api]     | Till Schneidereit                      |
 | [Typed Function References][function_references]                                                     | Andreas Rossberg                       |
 | [Relaxed dead code validation][relaxed-dead-code-validation]                                         | Conrad Watt and Ross Tate              |
 | [Numeric Values in WAT Data Segments][numeric-values-in-wat]                                         | Ezzat Chamudi                          |
-| [Branch Hinting][branch-hinting]                                                                     | Yuri Iozzelli                          |
+| [Instrument and Tracing Technology][instrument-tracing]                                              | Richard Winterton                      |
+| [Relaxed SIMD][relaxed-simd]                                                                         | Marat Dukhan & Zhi An Ng               |
+| [Garbage collection][garbage_collection]                                                             | Andreas Rossberg                       |
 
 ### Phase 1 - Feature Proposal (CG)
 
-| Proposal                                                                                         | Champion                         |
-| ------------------------------------------------------------------------------------------------ | -------------------------------- |
-| [Type Imports][type-imports]                                                                     | Andreas Rossberg                 |
-| [Garbage collection][garbage_collection]                                                         | Andreas Rossberg                 |
-| [Interface Types][interface_types]                                                               | Luke Wagner and Francis McCabe   |
-| [WebAssembly C and C++ API][wasm_c_api]                                                          | Andreas Rossberg                 |
-| [Feature Detection][feature_detection]                                                           | Thomas Lively                    |
-| [Extended Name Section][extended-name-section]                                                   | Andrew Scheidecker               |
-| [Flexible Vectors][flexible-vectors]                                                             | Petr Penzin                      |
-| [Instrument and Tracing Technology][instrument-tracing]                                          | Richard Winterton                |
-| [Call Tags][call-tags]                                                                           | Ross Tate                        |
-| [Module Linking][module_linking]                                                                 | Luke Wagner and Andreas Rossberg |
-| [Extended Constant Expressions][extended-const]                                                  | Sam Clegg                        |
-| [Web Content Security Policy][web_content_security_policy]                                       | Francis McCabe                   |
-| [Relaxed SIMD][relaxed-simd]                                                                     | Marat Dukhan & Zhi An Ng         |
-| [Stack Switching][stack-switching]                                                               | Francis McCabe & Sam Lindley     |
+| Proposal                                                   | Champion                                                                          |
+|------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| [Type Imports][type-imports]                               | Andreas Rossberg                                                                  |
+| [Interface Types][interface_types]                         | Luke Wagner and Francis McCabe                                                    |
+| [WebAssembly C and C++ API][wasm_c_api]                    | Andreas Rossberg                                                                  |
+| [Feature Detection][feature_detection]                     | Thomas Lively                                                                     |
+| [Extended Name Section][extended-name-section]             | Andrew Scheidecker                                                                |
+| [Flexible Vectors][flexible-vectors]                       | Petr Penzin                                                                       |
+| [Call Tags][call-tags]                                     | Ross Tate                                                                         |
+| [Module Linking][module_linking]                           | Luke Wagner and Andreas Rossberg                                                  |
+| [Extended Constant Expressions][extended-const]            | Sam Clegg                                                                         |
+| [Stack Switching][stack-switching]                         | Francis McCabe & Sam Lindley                                                      |
+| [Constant Time][constant-time]                             | Sunjay Cauligi, Garrett Gu, John Renner, Hovav Shacham, Deian Stefan, Conrad Watt |
+| [JS Promise Integration][js-promise-integration]           | Ross Tate and Francis McCabe                                                      |
 
 ### Phase 0 - Pre-Proposal (CG)
 
 | Proposal                                                   | Champion                         |
 | ---------------------------------------------------------- | -------------------------------- |
 | [Funclets: Flexible Intraprocedural Control Flow][funclets]| Dan Gohman                       |
-| [Constant Time][constant-time]                             | John Renner, Hovav Shacham, Deian Stefan, Conrad Watt|
 
+## Implementation status
 
-### Contributing new proposals
+Roadmap is available on https://webassembly.org/roadmap/
 
-Please see [Contributing to WebAssembly](https://github.com/WebAssembly/design/blob/master/Contributing.md) for the most up-to-date information on contributing proposals to standard.
+## Contributing new proposals
+
+Please see [Contributing to WebAssembly](https://github.com/WebAssembly/design/blob/main/Contributing.md) for the most up-to-date information on contributing proposals to standard.
 
 [custom_annotation_syntax_in_the_text_format]: https://github.com/WebAssembly/annotations
 [ecmascript_module_integration]: https://github.com/WebAssembly/esm-integration
 [exception_handling]: https://github.com/WebAssembly/exception-handling
 [feature_detection]: https://github.com/WebAssembly/feature-detection
-[fixed-width_simd]: https://github.com/webassembly/simd
 [function_references]: https://github.com/WebAssembly/function-references
 [type-imports]: https://github.com/WebAssembly/proposal-type-imports
 [garbage_collection]: https://github.com/WebAssembly/gc
@@ -96,3 +105,4 @@ Please see [Contributing to WebAssembly](https://github.com/WebAssembly/design/b
 [extended-const]: https://github.com/WebAssembly/extended-const
 [relaxed-simd]: https://github.com/WebAssembly/relaxed-simd
 [stack-switching]: https://github.com/WebAssembly/stack-switching
+[js-promise-integration]: https://github.com/WebAssembly/js-promise-integration
